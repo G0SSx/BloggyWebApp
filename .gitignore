@@ -1,0 +1,40 @@
+# ASP.NET Core
+bin/
+obj/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+*_dll/
+
+# Visual Studio files
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.pdb
+project.lock.json
+project.assets.json
+
+# Build results
+*/wwwroot/
+
+# ASP.NET Core identity
+app.db
+
+# Node.js
+node_modules/
+
+# Logs and analytics files
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Visual Studio Code files
+.vscode/
