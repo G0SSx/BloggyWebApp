@@ -25,7 +25,7 @@ namespace BloggyWebApp.Controllers
         {
             return _context.Post != null ? 
                 View(await _context.Post.ToListAsync()) :
-                Problem("Entity set 'ApplicationDbContext.Post'  is null.");
+                Problem("context variable Post is null (PostsController class)");
         }
 
         // GET: Jokes/ShowSearchForm
@@ -33,7 +33,7 @@ namespace BloggyWebApp.Controllers
         {
             return View();
         }
-
+        
         // POST: Jokes/ShowSearchResults
         public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
         {
@@ -138,7 +138,6 @@ namespace BloggyWebApp.Controllers
         }
 
         // GET: Posts/Delete/5
-        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Post == null)
@@ -157,7 +156,6 @@ namespace BloggyWebApp.Controllers
         }
 
         // POST: Posts/Delete/5
-        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

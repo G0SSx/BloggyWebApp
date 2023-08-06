@@ -10,6 +10,7 @@ namespace BloggyWebApp.Data
             : base(options)
         {
         }
-        public DbSet<BloggyWebApp.Models.Post>? Post { get; set; }
+
+        public DbSet<Post>? Post { get; set; }
     }
 }
