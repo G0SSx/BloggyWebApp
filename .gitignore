@@ -20,9 +20,6 @@ packages/
 project.lock.json
 project.assets.json
 
-# Build results
-*/wwwroot/
-
 # ASP.NET Core identity
 app.db
 
