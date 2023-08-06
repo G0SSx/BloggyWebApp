@@ -7,8 +7,9 @@ obj/
 [Rr]elease/
 *_dll/
 
-# Visual Studio files
+# Visual Studio | VSCode files
 .vscode/
+.vs/
 *.user
 *.suo
 *.sln.docstates
@@ -32,6 +33,3 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Visual Studio Code files
-.vscode/
