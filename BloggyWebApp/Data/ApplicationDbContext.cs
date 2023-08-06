@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BloggyWebApp.Models;
 
 namespace BloggyWebApp.Data
 {
@@ -9,5 +10,6 @@ namespace BloggyWebApp.Data
             : base(options)
         {
         }
+        public DbSet<BloggyWebApp.Models.Post>? Post { get; set; }
     }
 }
